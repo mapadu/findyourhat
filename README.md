@@ -17,8 +17,8 @@ Installation
 
 2. Install the required package:
 
-    npm install prompt-sync
+- npm install prompt-sync
 
 3. Run the game:
 
-    node game.js
+- node game.js

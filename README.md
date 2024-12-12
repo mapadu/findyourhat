@@ -12,13 +12,13 @@ Installation
 
 1. Clone this repository:
 
-git clone https://github.com/your-username/find-your-hat.git
-cd find-your-hat
+- git clone https://github.com/your-username/find-your-hat.git
+- cd find-your-hat
 
 2. Install the required package:
 
-npm install prompt-sync
+    npm install prompt-sync
 
 3. Run the game:
 
-node game.js
+    node game.js

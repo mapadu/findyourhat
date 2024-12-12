@@ -6,7 +6,7 @@ Prerequisites
 
 To run this game, you’ll need:
 - Node.js installed on your computer.
-- The prompt-sync package installed (see Installation).
+- The prompt-sync package installed.
 
 Installation
 

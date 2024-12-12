@@ -63,21 +63,21 @@ class Field {
 
   static generateField (height, width, holePercentage = 0.2) {
 
-    // Empty field
+    // empty field
     const field = Array.from({ length: height }, () => Array(width).fill(fieldCharacter));
 
-    // Placing the hat randomly
+    // placing the hat randomly
     const hatRow = Math.floor(Math.random() * height);
     const hatCol = Math.floor(Math.random() * width);
     field[hatRow][hatCol] = hat;
 
-    // Placing the wholes randomly
+    // placing the wholes randomly
     let numHoles = Math.floor(height * width * holePercentage);
     while (numHoles > 0) {
       const holeRow = Math.floor(Math.random() * height);
       const holeCol = Math.floor(Math.random() * width);
 
-    // Ensuring that the hole not overwrites the hat
+    // ensuring that the hole not overwrites the hat
     if (field[holeRow][holeCol] === fieldCharacter && (holeRow !== hatRow || holeCol !== hatCol)) {
       field[holeRow][holeCol] = hole;
       numHoles--;
@@ -95,7 +95,7 @@ class Field {
 
     console.log('Welcome! Let\'s start the game!')
 
-    // printing initial Field
+    // printing initial field
     this.print();
 
     while (gameState === 'play') {
